@@ -1,0 +1,18 @@
+{% ckan_extends %}
+
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="/datagovrov2_theme.css" />
+
+  
+  <div id="id01" class="modal">
+    <div class="modal-content animate">
+      <div class="imgcontainer" style="padding:20px;">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <h3>Va rog, daca aveti timp la dispozitie, sa completati acest survey, pentru a ajuta la imbunatatirea platformei</h3>
+        <a id="surveybtn" href="https://forms.gle/zh65qsSke2Rj7sD19" target="_blank">Mergeti la chestionar</a>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

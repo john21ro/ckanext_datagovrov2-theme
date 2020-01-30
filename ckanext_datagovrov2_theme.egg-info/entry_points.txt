@@ -1,0 +1,10 @@
+
+        [ckan.plugins]
+        datagovrov2_theme=ckanext.datagovrov2_theme.plugin:datagovrov2_themePlugin
+
+        [paste.paster_command]
+        create_initial_data = ckanext.datagovrov2_theme.commands:CreateInitialDataCommand
+
+        [babel.extractors]
+        ckan = ckan.lib.extract:extract_ckan
+    

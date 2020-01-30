@@ -1,0 +1,75 @@
+Metadata-Version: 1.1
+Name: ckanext-datagovrov2-theme
+Version: 1.0.1
+Summary: Theme for data.gov.ro
+Home-page: https://github.com/john21ro/ckanext-datagovrov2_theme
+Author: DSOD
+Author-email: john21ro@gmail.com
+License: AGPL
+Description: =============
+        ckanext-datagovrov2_theme
+        =============
+        
+        .. image:: https://travis-ci.org/govro/ckanext-datagovrov2_theme.svg?branch=master
+            :target: https://travis-ci.org/govro/ckanext-datagovrov2_theme
+        
+        This extensions includes custom modifications that have been made to
+        http://data.gov.ro/ to support our own use cases.
+        
+        ------------
+        Requirements
+        ------------
+        
+        Built for http://github.com/datagovro/ckan version.
+        
+        
+        ------------
+        Installation
+        ------------
+        
+        .. Add any additional install steps to the list below.
+           For example installing any non-Python dependencies or adding any required
+           config settings.
+        
+        To install ckanext-datagovrov2_theme:
+        
+        1. Activate your CKAN virtual environment, for example::
+        
+             . /usr/lib/ckan/default/bin/activate
+        
+        2. Clone and install the ckanext-datagovrov2_theme Python package into your virtual environment::
+        
+             python setup.py develop
+        
+        3. Add ``datagovrov2_theme`` to the ``ckan.plugins`` setting in your CKAN
+           config file (by default the config file is located at
+           ``/etc/ckan/default/production.ini``).
+        
+        4. Restart CKAN. For example if you've deployed CKAN with Apache on Ubuntu::
+        
+             sudo service apache2 reload
+        
+        
+        ---------------
+        Config Settings
+        ---------------
+        
+        ```
+        datagovrov2_theme.custom_resource_download_url = http://data.gov.ro
+        datagovrov2_theme.google_analytics_token_path = /etc/ckan/default/google-analytics-secrets.json
+        ```
+        
+        -----------------
+        Running the Tests
+        -----------------
+        
+        To run the tests, do::
+        
+            nosetests --nologcapture --with-pylons=test.ini
+        
+Keywords: CKAN theme
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
